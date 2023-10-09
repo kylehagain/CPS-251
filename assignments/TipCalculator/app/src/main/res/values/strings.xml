@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">TipCalculator</string>
+    <string name="enter_bill_total">Enter Bill Total</string>
+    <string name="calculate_tip">CALCULATE TIP</string>
+    <string name="totals">Tip amounts will display here</string>
+    <string name="fail">PLEASE ENTER A VALID NUMBER</string>
+    <string name="result">The tips are as follows:</string>
+    <string name="the_tips_are_as_follows">The tips are as follows:</string>
+
+</resources>
