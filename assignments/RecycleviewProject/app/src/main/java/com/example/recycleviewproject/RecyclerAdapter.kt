@@ -1,5 +1,6 @@
 package com.example.recycleviewproject
 
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -35,6 +36,8 @@ class RecyclerAdapter : RecyclerView.Adapter<RecyclerAdapter.ViewHolder>() {
         viewHolder.itemTitle.text = titles[i]
         viewHolder.itemDetail.text = details[i]
         viewHolder.itemImage.setImageResource(images[i])
+
+
     }
 
     override fun getItemCount(): Int {
@@ -55,10 +58,14 @@ class RecyclerAdapter : RecyclerView.Adapter<RecyclerAdapter.ViewHolder>() {
             itemView.setOnClickListener { v: View ->
                 val position: Int = adapterPosition + 1
 
+                val intent = Intent(this, IndividualContent::class.java)
+                startActivity(intent)
+
                 Snackbar.make(v, "Click detected on item $position",
                     Snackbar.LENGTH_LONG).setAction("Action", null).show()
 
             }
+
         }
 
 
